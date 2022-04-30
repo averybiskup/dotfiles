@@ -12,19 +12,18 @@ set ignorecase
 set laststatus=2
 set splitright
 set colorcolumn=80
-highlight ColorColumn ctermbg=6 guibg=blue
+highlight ColorColumn ctermbg=gray
 set textwidth=79
 set hlsearch
 set number relativenumber
 set nu rnu
-set smartindent
+set autoindent
 set fillchars+=vert:\ 
-highlight VertSplit ctermbg=black
-hi VertSplit  guibg=black guifg=LightGray ctermbg=black ctermfg=LightGray
+hi VertSplit guibg=black guifg=LightGray ctermbg=black ctermfg=black
 
 hi LineNr guibg=bg
 set foldcolumn=1
-hi FoldColumn  guibg=black guifg=LightGray ctermbg=black ctermfg=LightGray
+hi FoldColumn guibg=black guifg=LightGray ctermbg=black ctermfg=LightGray
  
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -58,6 +57,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'https://github.com/altercation/vim-colors-solarized.git'
     Plug 'https://github.com/sainnhe/everforest.git'
     Plug 'https://github.com/tomasr/molokai.git'  
+    Plug 'https://github.com/mxw/vim-prolog.git'
+    Plug 'https://github.com/leafgarland/typescript-vim.git'
 
    " On-demand loading
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -124,8 +125,21 @@ noremap <C-w>< :vertical:resize -5<CR>
 noremap <C-w>> :vertical:resize +5<CR>
 inoremap <CR> <CR>x<BS>
 
+
+" better searching movement
+nnoremap n nzz
+nnoremap N Nzz
+
 " Leader remaps
 map ,t :tabnew . <Enter>
 map ss :w <Enter>
 map ,f :Files .<Enter> 
+
+" Moving text
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+inoremap <C-j> <esc>:m .+1<CR>==
+inoremap <C-k> <esc>:m .-2<CR>==
+nnoremap <leader>k :m .-2<CR>==
+nnoremap <leader>j :m .+1<CR>==
 
