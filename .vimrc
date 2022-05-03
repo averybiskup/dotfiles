@@ -118,13 +118,14 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+nnoremap <C-N> gT<CR>
+nnoremap <C-M> gt<CR>
 
 noremap <C-w>+ :resize +5<CR>
 noremap <C-w>- :resize -5<CR>
 noremap <C-w>< :vertical:resize -5<CR>
 noremap <C-w>> :vertical:resize +5<CR>
 inoremap <CR> <CR>x<BS>
-
 
 " better searching movement
 nnoremap n nzz
@@ -133,7 +134,6 @@ nnoremap N Nzz
 " Leader remaps
 map ,t :tabnew . <Enter>
 map ss :w <Enter>
-map ,f :Files .<Enter> 
 
 " Moving text
 vnoremap J :m '>+1<CR>gv=gv
