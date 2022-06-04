@@ -63,6 +63,7 @@ call plug#begin('~/.vim/plugged')
    " On-demand loading
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
     Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+    Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 
    " Using a non-master branch
     Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
