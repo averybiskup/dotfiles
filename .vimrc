@@ -1,28 +1,30 @@
-set backspace=2
+set nowrap
 set number
 set noswapfile
-set scrolloff=12
 set incsearch
 set expandtab
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2 
 set ruler
 set ignorecase
-set laststatus=2
 set splitright
-set colorcolumn=80
-highlight ColorColumn ctermbg=gray
-set textwidth=79
 set hlsearch
 set number relativenumber
 set nu rnu
 set autoindent
-set fillchars+=vert:\ 
-hi VertSplit guibg=black guifg=LightGray ctermbg=black ctermfg=black
 
-hi LineNr guibg=bg
+set fillchars+=vert:\ 
+set colorcolumn=80
+set textwidth=79
+set laststatus=2
+set tabstop=2
+set scrolloff=12
+set backspace=2
+set shiftwidth=2
+set softtabstop=2 
 set foldcolumn=1
+
+hi ColorColumn ctermbg=gray
+hi VertSplit guibg=black guifg=LightGray ctermbg=black ctermfg=black
+hi LineNr guibg=bg
 hi FoldColumn guibg=black guifg=LightGray ctermbg=black ctermfg=LightGray
  
 if empty(glob('~/.vim/autoload/plug.vim'))
