@@ -71,7 +71,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 
    " Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
-    Plug 'fatih/vim-go', { 'tag': '*' }
     
    " Plugin options
     Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }

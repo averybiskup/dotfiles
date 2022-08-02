@@ -1,0 +1,1 @@
+/Users/averybiskup/.config/nvim/init.vim
