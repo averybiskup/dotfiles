@@ -22,8 +22,5 @@ return require('packer').startup(function()
     use 'neovim/nvim-lspconfig'
 
     -- code completion
-    use {'neoclide/coc.nvim', branch = 'release'}
-
-    -- code completion
     use {'ms-jpq/coq_nvim', branch = 'coq' }
 end)
