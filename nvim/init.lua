@@ -1,1 +1,1 @@
-require("styles")
+require("config")

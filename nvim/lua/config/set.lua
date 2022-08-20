@@ -47,5 +47,7 @@ vim.opt.fillchars = {
   foldclose = ">",
 }
 
+-- No Swaps
+vim.opt.swapfile = false
 
 
