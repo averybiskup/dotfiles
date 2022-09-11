@@ -26,4 +26,12 @@ return require('packer').startup(function()
 
     -- lsp installer
     use "williamboman/nvim-lsp-installer"
+
+    -- code formatter
+    use {
+      "prettier/vim-prettier",
+      ft = { "html", "javascript", "typescript", "typescriptreact" },
+      run = "yarn install",
+    }
+
 end)
