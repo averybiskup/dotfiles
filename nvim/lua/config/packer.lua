@@ -5,6 +5,9 @@ return require('packer').startup(function()
 
     -- colorscheme
     use 'folke/tokyonight.nvim'
+    use 'morhetz/gruvbox'
+    use { 'catppuccin/nvim', as = 'catppuccin' }
+    use 'tiagovla/tokyodark.nvim'
 
     -- telescope (fzf)
     use {
@@ -17,21 +20,11 @@ return require('packer').startup(function()
       'nvim-lualine/lualine.nvim',
       requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
-    
-    -- for language server protocols 
-    use 'neovim/nvim-lspconfig'
 
     -- code completion
     use {'ms-jpq/coq_nvim', branch = 'coq' }
 
     -- lsp installer
     use "williamboman/nvim-lsp-installer"
-
-    -- code formatter
-    use {
-      "prettier/vim-prettier",
-      ft = { "html", "javascript", "typescript", "typescriptreact" },
-      run = "yarn install",
-    }
 
 end)
