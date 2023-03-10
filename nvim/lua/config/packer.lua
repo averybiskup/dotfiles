@@ -22,9 +22,9 @@ return require('packer').startup(function()
     }
 
     -- code completion
-    use {'ms-jpq/coq_nvim', branch = 'coq' }
+    -- use {'ms-jpq/coq_nvim', branch = 'coq' }
 
     -- lsp installer
-    use "williamboman/nvim-lsp-installer"
+    -- use "williamboman/nvim-lsp-installer"
 
 end)

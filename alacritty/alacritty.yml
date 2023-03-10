@@ -49,6 +49,7 @@ window:
     x: 5
     y: 20
 
+
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
 
@@ -991,4 +992,4 @@ schemes:
       cyan:    '0x89b482'
       white:   '0xdfbf8e'
 
-colors: *gruv-box-material
+colors: *tokyo-night-storm

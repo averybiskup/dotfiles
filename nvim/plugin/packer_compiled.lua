@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/Users/averybiskup/.local/share/nvim/site/pack/packer/start/catppuccin",
     url = "https://github.com/catppuccin/nvim"
   },
-  coq_nvim = {
-    loaded = true,
-    path = "/Users/averybiskup/.local/share/nvim/site/pack/packer/start/coq_nvim",
-    url = "https://github.com/ms-jpq/coq_nvim"
-  },
   gruvbox = {
     loaded = true,
     path = "/Users/averybiskup/.local/share/nvim/site/pack/packer/start/gruvbox",
@@ -93,11 +88,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/averybiskup/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
-  },
-  ["nvim-lsp-installer"] = {
-    loaded = true,
-    path = "/Users/averybiskup/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
-    url = "https://github.com/williamboman/nvim-lsp-installer"
   },
   ["nvim-web-devicons"] = {
     loaded = false,
