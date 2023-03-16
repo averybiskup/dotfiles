@@ -5,9 +5,10 @@ return require('packer').startup(function()
 
     -- colorscheme
     use 'folke/tokyonight.nvim'
+    use 'shaunsingh/nord.nvim'
     use 'morhetz/gruvbox'
+    use { 'NLKNguyen/papercolor-theme', as = 'papercolor' }
     use { 'catppuccin/nvim', as = 'catppuccin' }
-    use 'tiagovla/tokyodark.nvim'
 
     -- telescope (fzf)
     use {

@@ -15,6 +15,7 @@ vim.opt.hidden = true
 vim.opt.scrolloff = 12
 vim.opt.laststatus = 3
 vim.opt.termguicolors = true
+vim.opt.background = "light"
 
 -- Color Column
 vim.opt.colorcolumn = "80"
