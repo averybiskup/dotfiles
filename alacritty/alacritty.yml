@@ -1159,8 +1159,8 @@ schemes:
       cursor: '0x4d4d4c'
     normal:
       black:   '0xededed'
-      red:     '0xd7005f'
-      green:   '0x718c00'
+      red:     '0xd93930'
+      green:   '0x539165'
       yellow:  '0xd75f00'
       blue:    '0x4271ae'
       magenta: '0x8959a8'
@@ -1169,7 +1169,7 @@ schemes:
     bright:
       black:   '0x949494'
       red:     '0xd7005f'
-      green:   '0x718c00'
+      green:   '0x539165'
       yellow:  '0xd75f00'
       blue:    '0x4271ae'
       magenta: '0x8959a8'
