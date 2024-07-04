@@ -16,6 +16,8 @@ vim.opt.scrolloff = 12
 vim.opt.laststatus = 3
 vim.opt.termguicolors = true
 vim.opt.background = "light"
+vim.wo.wrap = false
+vim.opt.signcolumn = "no"
 
 -- Color Column
 vim.opt.colorcolumn = "80"
@@ -34,7 +36,7 @@ vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 vim.opt.smartindent = true
-vim.opt.wrap = true
+vim.opt.wrap = false
 
 -- Fill Characters
 vim.opt.fillchars = {

@@ -1,5 +1,7 @@
 local M = {}
 
+vim.keymap.set('i', '<C-L>', '<Plug>(copilot-accept-word)')
+
 function bind(op, outer_opts)
     outer_opts = outer_opts or {noremap = true}
     return function(lhs, rhs, opts)
